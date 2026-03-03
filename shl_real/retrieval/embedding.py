@@ -7,7 +7,7 @@ from sentence_transformers import SentenceTransformer
 DATA_PATH = "data/processed_catalog.json"
 INDEX_PATH = "data/faiss.index"
 META_PATH = "data/meta.json"
-MODEL_NAME = "BAAI/bge-base-en-v1.5"
+MODEL_NAME = "all-MiniLM-L6-v2"
 
 
 # -----------------------------
