@@ -13,7 +13,8 @@ from sentence_transformers import SentenceTransformer
 MODEL_NAME = "all-MiniLM-L6-v2"
 INDEX_PATH = "data/faiss.index"
 META_PATH = "data/meta.json"
-
+import os
+import uvicorn
 app = FastAPI()
 
 print("Loading model...")
@@ -240,3 +241,7 @@ def recommend_web(query: str = Form(...)):
     html += "</ul><br><a href='/'>Back</a>"
 
     return html
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run("api.main:app", host="0.0.0.0", port=port)
