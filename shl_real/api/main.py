@@ -10,7 +10,7 @@ from sentence_transformers import SentenceTransformer
 # -----------------------------
 # Config
 # -----------------------------
-MODEL_NAME = "BAAI/bge-base-en-v1.5"
+MODEL_NAME = "all-MiniLM-L6-v2"
 INDEX_PATH = "data/faiss.index"
 META_PATH = "data/meta.json"
 
