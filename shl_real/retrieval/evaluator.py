@@ -10,7 +10,7 @@ DATASET_PATH = "/home/ansh/Downloads/Gen_AI_Dataset.xlsx"
 INDEX_PATH = "data/faiss.index"
 META_PATH = "data/meta.json"
 OUTPUT_CSV = "submission.csv"
-MODEL_NAME = "BAAI/bge-base-en-v1.5"
+MODEL_NAME = "all-MiniLM-L6-v2"
 
 
 # -----------------------------
